@@ -98,7 +98,7 @@ document.querySelectorAll(".restaurant-card").forEach(card => {
 });
 
 async function loadRestaurants() {
-  const res = await fetch("http://localhost:3000/restaurants");
+  const res = await fetch("https://food-delivery-app-dvpw.onrender.com/restaurants");
   const data = await res.json();
 
   const container = document.querySelector(".slider");
